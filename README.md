@@ -130,5 +130,5 @@ HBnB - version 9.6
 To all the peers that contribuited with their knowledge
 
 ### Authors :fountain_pen:
-* Solomon Ampah - @pizzosta
-* Obinna Andrew Onyekwere - @obylo98
+* **Solomon Ampah** - <[pizzosta](https://github.com/pizzosta)>
+* **Obinna Andrew Onyekwere** - <[obylo98](https://github.com/obylo98)>
