@@ -1,6 +1,5 @@
 import json
 from os import path
-from models.base_model import BaseModel
 
 
 class FileStorage:
@@ -19,13 +18,10 @@ class FileStorage:
 
     def save(self):
         """ Serializes __objects to the JSON file """
-        dictionary = {}
-
-        for key, value in FileStorage.__objects.items():
-            dictionary[key] = value.to_dict()
-
-        with open(FileStorage.__file_path, 'w') as f:
-            json.dump(dictionary, f)
+        odict = FileStorage.__objects
+        objdict = {obj: odict[obj].to_dict() for obj in odict.keys()}
+        with open(FileStorage.__file_path, "w") as f:
+            json.dump(objdict, f)
 
     def reload(self):
         """Deserialize the JSON file __file_path to __objects, if it exists."""
