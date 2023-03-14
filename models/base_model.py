@@ -37,7 +37,7 @@ class BaseModel:
         """updates last update time
         """
         self.updated_at = datetime.now()
-        storage.new(self)
+        storage.save()
 
     def to_dict(self):
         """creates a new dictionary, adding a key and returning
