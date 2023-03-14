@@ -30,10 +30,10 @@ class FileStorage:
         """
         from models.base_model import BaseModel
 
-        dct = {'BaseModel': BaseModel}
+        classes = {'BaseModel': BaseModel}
 
         if os.path.exists(FileStorage.__file_path) is True:
             with open(FileStorage.__file_path, 'r') as f:
                 serialized_objects = json.load(f)
                 for key, value in serialized_objects.items():
-                    self.new(dct[value['__class__']](**value))
+                    self.new(classes[value['__class__']](**value))
