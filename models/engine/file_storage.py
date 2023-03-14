@@ -29,7 +29,7 @@ class FileStorage:
         """Deserialize the JSON file __file_path to __objects, if it exists."""
         try:
             with open(FileStorage.__file_path, 'r') as f:
-                serialized_objects = json.load(file)
+                serialized_objects = json.load(f)
                 for key, value in serialized_objects.items():
                     class_name, obj_id = key.split('.')
                     self.__objects[key] = globals()[class_name](**value)
