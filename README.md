@@ -1,4 +1,4 @@
-![HBnB Logo](./image/hbnb_logo.png)
+![HBnB Logo](./images/hbnb_logo.png)
 
 
 ### Contents
