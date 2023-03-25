@@ -6,5 +6,5 @@ footer {
         bottom: 0;
         position: fixed;
 	line-height: 60px;
-        border-top: 1px #CCCCCC;
+        border-top: 1px solid #CCCCCC;
       }
